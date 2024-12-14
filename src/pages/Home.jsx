@@ -1,17 +1,21 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    const navigate = useNavigate()
-
-    const handleClick = () => {
-        navigate("/subscribe")
-    }
+  const navigate = useNavigate();
+  const [loaded, setLoaded] = useState(false);
+  const handleClick = () => {
+    navigate("/subscribe");
+  };
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
+        {!loaded && <div className="skeleton h-32 w-32"></div>}
         <img
           src="https://i.ibb.co/xMXzvBg/peter.jpg"
           className="max-w-sm rounded-lg shadow-2xl max-h-72"
+          onLoad={() => setLoaded(true)}
+          style={loaded ? {} : { display: "none" }}
         />
         <div className="flex flex-col justify-center text-center w-full">
           <h1 className="text-4xl font-bold">
@@ -22,7 +26,10 @@ const Home = () => {
             share two random tech topics with you every day. Want in? Hit that
             subscribe button and let’s get started! Heh heh!
           </p>
-          <button className="btn btn-primary mx-auto text-lg" onClick={handleClick}>
+          <button
+            className="btn btn-primary mx-auto text-lg"
+            onClick={handleClick}
+          >
             Subscribe...
           </button>
         </div>
