@@ -1,3 +1,5 @@
+import Promote from "./Promote";
+
 const Thank = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -10,6 +12,7 @@ const Thank = () => {
           </p>
         </div>
       </div>
+      <Promote />
     </div>
   );
 };

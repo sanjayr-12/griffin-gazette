@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Promote from "../components/Promote";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -36,7 +37,8 @@ const Home = () => {
             Subscribe...
           </button>
         </div>
-      </div>
+          </div>
+          <Promote/>
     </div>
   );
 };
