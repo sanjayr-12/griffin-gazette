@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Thank from "./Thank";
-import Promote from "./Promote";
 
 const Otp = () => {
   const [show, setShow] = useState(false);
@@ -71,7 +70,6 @@ const Otp = () => {
             </div>
           </div>
           <Toaster />
-          <Promote/>
         </div>
       )}
     </>

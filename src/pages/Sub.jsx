@@ -2,7 +2,6 @@ import { useState } from "react";
 import Otp from "../components/Otp";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import Promote from "../components/Promote";
 
 const Sub = () => {
   const [show, setShow] = useState(false);
@@ -70,7 +69,6 @@ const Sub = () => {
               </form>
             </div>
           </div>
-          <Promote />
         </div>
       )}
     </>

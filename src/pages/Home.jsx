@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Promote from "../components/Promote";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -38,7 +37,6 @@ const Home = () => {
           </button>
         </div>
           </div>
-          <Promote/>
     </div>
   );
 };
