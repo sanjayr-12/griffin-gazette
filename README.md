@@ -18,8 +18,7 @@ If for some reason, you don’t want to hear from Peter anymore (he’s still a 
 
 ## Check Out The Website
 
-Visit the website to subscribe:  
-[www.peter.work.gd](https://www.peter.work.gd)
+Visit the website to subscribe: [www.peter.work.gd](https://www.peter.work.gd)
 
 ---
 
