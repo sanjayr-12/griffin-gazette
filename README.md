@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Peter Griffin's Gazette
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Peter Griffin's Gazette**! Yeah, you read that right. This is where you get two random tech topics every day, straight to your inbox, courtesy of Peter Griffin himself. If you’re a fan of Peter’s humor and want to learn a thing or two about tech, you’ve come to the right place.
 
-Currently, two official plugins are available:
+## What is Peter Griffin's Gazette?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Well, it’s a newsletter that sends you two fresh tech topics daily. Simple enough, right? Every day at **11:10 AM**, you'll get an email packed with some cool, random tech topics. Trust me, Peter Griffin's style will make it much more interesting than your usual boring newsletter.
 
-## Expanding the ESLint configuration
+## How to Subscribe
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Sign up**: Enter your email on the website.
+2. **OTP Verification**: You'll receive an OTP to verify your email. Just enter it, and you're in!
+3. **Get Your Topics**: Receive two random tech topics every day at 11:10 AM. Pretty neat, huh?
 
-- Configure the top-level `parserOptions` property like this:
+## Unsubscribe
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+If for some reason, you don’t want to hear from Peter anymore (he’s still a bit sad about it), you can unsubscribe. Just click the link in any of the daily emails, and you’ll be good to go. But remember, once you unsubscribe... you might miss Peter’s charm. 
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Check Out The Website
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Visit the website to subscribe: [www.peter.work.gd](https://www.peter.work.gd)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+_"Remember, if you unsubscribe, you’re basically saying goodbye to Peter Griffin and his tech wisdom. Think about it. You’ll miss him!"_ – Peter Griffin
