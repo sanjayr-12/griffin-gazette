@@ -15,8 +15,8 @@ const Home = () => {
       <div className="hero-content flex-col lg:flex-row">
         {!loaded && <div className="skeleton w-[14rem] h-72"></div>}
         <img
-                  src="https://i.ibb.co/xMXzvBg/peter.jpg"
-                  alt="chat avatar"
+          src="https://i.ibb.co/xMXzvBg/peter.jpg"
+          alt="chat avatar"
           className="max-w-sm rounded-lg shadow-2xl max-h-72"
           onLoad={handleImageLoad}
           style={loaded ? {} : { display: "none" }}
@@ -35,6 +35,10 @@ const Home = () => {
             onClick={handleClick}
           >
             Subscribe...
+          </button>
+          <br />
+          <button className="btn btn-ghost mx-auto text-lg">
+            <a href="https://chat.omgpeter.tech">Chat with me</a>
           </button>
         </div>
       </div>
