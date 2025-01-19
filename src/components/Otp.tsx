@@ -32,6 +32,7 @@ const Otp = () => {
       setDisable(false);
     }
   };
+  
   return (
     <>
       {show ? (
