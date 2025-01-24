@@ -20,6 +20,12 @@ If for some reason, you don’t want to hear from Peter anymore (he’s still a 
 
 Visit the website to subscribe: [www.omgpeter.tech](https://www.omgpeter.tech)
 
+## Backend Code
+
+This repository contains the **frontend code**.
+
+The **backend code** for this project can be found here: [AI Newsletter Backend](https://github.com/sanjayr-12/ai-news-letter).
+
 ---
 
 _"Remember, if you unsubscribe, you’re basically saying goodbye to Peter Griffin and his tech wisdom. Think about it. You’ll miss him!"_ – Peter Griffin
