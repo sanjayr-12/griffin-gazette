@@ -27,7 +27,7 @@ const Sub = () => {
       setShow(true);
       toast.success(response.data.message);
     } catch (error) {
-      if (error instanceof AxiosError) {
+      if (error instanceof AxiosError) {        
         toast.error(error?.response?.data?.error || "Server is down");
       } else {
         toast.error("something went wrong");
