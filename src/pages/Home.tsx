@@ -37,9 +37,13 @@ const Home = () => {
             Subscribe...
           </button>
           <br />
-          <button className="btn btn-ghost mx-auto text-lg">
-            <a href="https://chat.omgpeter.tech">Chat with me</a>
-          </button>
+          <a
+            href="https://chat.omgpeter.tech"
+            className="btn btn-ghost mx-auto text-lg"
+          >
+            {" "}
+            <button>Chat with me</button>{" "}
+          </a>
         </div>
       </div>
     </div>

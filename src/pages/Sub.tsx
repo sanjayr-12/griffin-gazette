@@ -2,6 +2,7 @@ import { useState } from "react";
 import Otp from "../components/Otp";
 import toast, { Toaster } from "react-hot-toast";
 import axios, { AxiosError } from "axios";
+import Choose from "../components/Choose";
 
 const Sub = () => {
   const [show, setShow] = useState(false);
@@ -66,7 +67,8 @@ const Sub = () => {
                     className="input input-bordered"
                     required
                   />
-                </div>
+                  </div>
+                  <Choose/>
                 <div className="form-control mt-6">
                   <button
                     className="btn btn-primary text-lg"
