@@ -19,12 +19,11 @@ const Choose = () => {
             type="radio"
             name="radio-10"
             className="radio checked:bg-blue-500"
-            defaultChecked
           />
         </label>
       </div>
     </div>
   );
-}
+};
 
-export default Choose
+export default Choose;
