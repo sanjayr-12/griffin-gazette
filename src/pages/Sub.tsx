@@ -3,12 +3,16 @@ import Otp from "../components/Otp";
 import toast, { Toaster } from "react-hot-toast";
 import axios, { AxiosError } from "axios";
 import Choose from "../components/Choose";
+import { useStore } from "../store/store";
 
 const Sub = () => {
   const [show, setShow] = useState(false);
   const [disable, setDisable] = useState(false);
+  const otp = useStore((state) => state.otp)
+  // const single = useStore((state)=>state.single)
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const alias = otp?"":"single"
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email") as string;
     if (!email || email.trim() === "") {
@@ -21,11 +25,11 @@ const Sub = () => {
       if (!apiUrl) {
         throw new Error("API URL is not defined.");
       }
-      const response = await axios.post(apiUrl, {
+      const response = await axios.post(`${apiUrl}/${alias}`, {
         email,
       });
       localStorage.setItem("email", email);
-      setShow(true);
+      setShow(otp&&true);
       toast.success(response.data.message);
     } catch (error) {
       if (error instanceof AxiosError) {        

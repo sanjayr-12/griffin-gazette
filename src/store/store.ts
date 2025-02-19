@@ -10,6 +10,6 @@ type SubType = {
 export const useStore = create<SubType>()((set) => ({
   otp: true,
   single: false,
-  setOtp: (bol) => set(() => ({ otp: bol, single: false })),
-  setSingle: (bol) => set(() => ({ single: bol, otp: false })),
+  setOtp: (bol) => set(() => ({ otp: bol })),
+  setSingle: (bol) => set(() => ({ single: bol })),
 }));
